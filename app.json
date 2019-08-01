@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/mymap/mymap",
+    "pages/me/me",
+    "pages/comment/comment",
+    "pages/area/area"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "movie",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#777",
+    "selectedColor": "#fff",
+    "backgroundColor": "#000",
+    "list":[ {
+      "pagePath": "pages/home/home",
+      "text": "热播",
+      "iconPath": "/images/home1.png",
+      "selectedIconPath": "/images/home2.png"
+     },
+     {
+      "pagePath": "pages/mymap/mymap",
+      "text": "寻找",
+      "iconPath": "/images/map1.png",
+      "selectedIconPath": "/images/map2.png"
+     },
+     {
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "/images/me1.png",
+      "selectedIconPath": "/images/me2.png"
+     }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json"
+}

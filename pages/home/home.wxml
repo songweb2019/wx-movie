@@ -1,0 +1,33 @@
+<!-- 首页头部 -->
+<view class='home-header'>
+  <!-- 地址 -->
+  <view class='head-adr'>
+    <van-icon name="location"/>
+    <view bindtap='jumpArea'>郑州</view>  
+  </view>
+  <view class='head-font'>
+    热播列表
+  </view>
+</view>
+
+<!--影院首页-->
+<view class="movie" wx:for="{{list}}" wx:key="index">
+  <!--左侧:电影海报图片-->
+  <image class="movie-img" src="{{item.images.small}}"></image>
+  <!--右侧:电影介绍-->
+  <view class="movie-info">
+    <!--右侧:电影标题 30-->
+    <view class="movie-title">{{item.title}}</view>
+    <!--右侧:电影评分-->
+    <view>观众评分:<text class="movie-score">{{item.rating.average}}</text></view>
+    <!--右侧:电影主演-->
+    <view wx:for="{{item.casts}}" wx:key="index">主演:<text>{{item.name}}</text></view>
+    <!--右侧:电影年份-->
+    <view>年份:{{item.year}}</view>
+    <!--右侧:详情按钮-->
+  </view>
+  <view class='movie-btn'>
+    <button class="movie-comment" bindtap='jumpComment' data-id="{{item.id}}">详情</button>
+  </view>
+</view>
+

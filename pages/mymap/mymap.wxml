@@ -1,0 +1,6 @@
+<view class='map'>
+  地理位置
+</view>
+
+
+<map id="map" longitude='113.62' latitude='34.75' scale='14' show-location='{{myshow}}' style="width:100%;height:600rpx;" controls='{{controls}}' polyline='' markers=''></map>

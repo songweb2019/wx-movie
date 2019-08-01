@@ -1,0 +1,67 @@
+/* 首页头部 */
+.home-header{
+  padding: 10rpx;
+  background:#eee;
+}
+/* 地址 */
+.head-adr{
+  color:#666;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+/* 字体 */
+.head-font{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:40rpx;
+}
+
+/* 修饰电影区域 */
+/* 1：电影区域 */
+.movie{
+  display:flex;/*当前区域弹性布局*/
+  padding:10rpx;/*内边距*/
+  border-bottom:1rpx solid #ccc;/*下划线*/
+  margin:40rpx 0rpx;
+}
+/* 2：左侧电影图片 */
+.movie-img{
+  width:200rpx;/*图片宽度和高度*/
+  height:300rpx;
+  margin-right: 20rpx;/*与右侧文字间距*/
+}
+/* 3: 右侧电影介绍 */
+.movie-info{
+  flex:1;           /*将右侧区域充满*/
+  font-size:28rpx; /*文字大小*/
+  line-height:1.8; /*行高,垂直居中*/
+}
+/* 4: 右侧电影标题 */
+.movie-title{
+  color:#666;  /*标题文字颜色*/
+  font-size:40rpx;/*文字大小*/
+}
+/* 5: 右侧电影评分 */
+.movie-score{
+  color:#faaf00; /*评分颜色*/
+}
+/* 6: 右侧电影详情按钮 */
+.movie-btn{
+  display: flex;
+  justify-content:flex-end;
+  align-items: flex-end;
+}
+.movie-comment{
+  width:200rpx;
+  height:60rpx;        /*按钮高度*/
+  background:#e54847;/*按钮背景颜色*/
+  color:#fff;        /*按钮文字颜色*/
+  font-size:26rpx;     /*文字大小*/
+  margin-top:120rpx;   /*与文字距离*/
+}
+
+
