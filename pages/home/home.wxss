@@ -1,23 +1,11 @@
 /* 首页头部 */
 .home-header{
-  padding: 10rpx;
-  background:#eee;
-}
-/* 地址 */
-.head-adr{
-  color:#666;
-  font-size: 28rpx;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-/* 字体 */
-.head-font{
+  padding: 20rpx;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size:40rpx;
+  background:#eee;
 }
 
 /* 修饰电影区域 */
@@ -37,13 +25,13 @@
 /* 3: 右侧电影介绍 */
 .movie-info{
   flex:1;           /*将右侧区域充满*/
-  font-size:28rpx; /*文字大小*/
+  font-size:25rpx; /*文字大小*/
   line-height:1.8; /*行高,垂直居中*/
 }
 /* 4: 右侧电影标题 */
 .movie-title{
-  color:#666;  /*标题文字颜色*/
-  font-size:40rpx;/*文字大小*/
+  color:#000;  /*标题文字颜色*/
+  font-size:32rpx;/*文字大小*/
 }
 /* 5: 右侧电影评分 */
 .movie-score{

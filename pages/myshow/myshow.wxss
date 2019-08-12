@@ -1,0 +1,29 @@
+/* 查看评论 */
+.showlook{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:40rpx;
+  background:#eee;
+}
+/* 评论内容 */
+.showbox{
+  padding:20rpx;
+  margin:40rpx 0rpx;
+  font-size:30rpx;
+}
+/* 评论头 */
+.boxtop{
+  display: flex;
+  justify-content: space-between;
+}
+/* 评分 */
+.score{
+  font-size:35rpx;
+  color:#fa8;
+}
+/* 评论内容 */
+.contbox{
+  width: 100%;
+  margin:20rpx 0rpx;
+}

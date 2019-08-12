@@ -1,0 +1,100 @@
+<!-- 查看评论 -->
+<button bindtap='shows' class='showlook'>点击查看评论内容</button>
+
+<input focus="{{focus}}" type="text" bindinput="inputEdit" value="{{kw}}"/>
+<text wx:if="{{kw!==''}}" class="userinfo-nickname">查询 {{kw}} 评论的内容</text>
+
+<!-- 我的评论内容 -->
+<view wx:for="{{list}}" wx:key="index" class='showbox'>
+  <!--评论头  -->
+  <view class='boxtop'>
+    <text>mint ui</text>
+    <view>评分：<text class='score'>{{item.score}}</text>星</view>
+  </view>
+  <view class='contbox'>
+    <view>评论内容：<text>{{item.content}}</text></view>
+  </view>
+  <view>
+    <text></text>
+  </view>
+</view>
+
+<!-- 循环
+   <view wx:for="{{数组}}" wx:key="数组下标">
+     {{item.name}} 当前对象
+     {{index}} 当前下标
+   </view>
+ -->
+<!-- 判断条件：
+    <view wx:if="{{condition>x}}">xxx</view>
+    condition 表达式变量 true-当前元素正常显示 false-当前元素删除
+    多个判断条件：
+    <view wx:elif="{{condition>xx}}">xxx</view>
+    <view wx:else>xxx</view>
+ -->
+<!--隐藏： 
+   <view hidden='{{age==19}}'>xxx</view>
+   ：如果频繁切换情景下 hidden更好
+   ：如果在运行时条件不大可能改变则 wx:if 更好
+-->
+<!--事件绑定方式:
+<view>支持冒泡</view>
+<view bindtap='handle2'>
+   父元素
+   <view bindtap='handle1'>子元素</view>
+</view>
+<view>不支持冒泡</view>
+<view catchtap='handle4'>
+   父元素2
+   <view catchtap='handle3'>子元素2</view>
+</view>
+-->
+<!-- 组件生命周期：一个组件创建开始到使用到最后销毁的过程
+  onLoad   组件创建成功触发一次
+  onReady  组件初始化渲染成功触发一次
+  onShow   显示组件 前台显示 多次
+  onHide   隐藏组件 后台 多次
+  onUnload 组件销毁
+  onPullDownRefresh 用户下拉操作
+       "enablePullDownRefresh": true   全局app.json修改允许下拉操作
+  onReachBottom  用户上拉操作
+-->
+<!--  
+<button bindtap='insert'>添加数据</button>
+<button bindtap='update'>更新数据</button>
+<button bindtap='del'>删除数据</button>
+<button bindtap='select'>查询数据</button>
+<button bindtap='selectwhere'>查询条件数据</button>
+-->
+<!--  
+  <view>云数据库-练习</view>
+  <button bindtap='insertStu'>添加stu数据</button>
+  <button bindtap='updateStu'>更新stu数据</button>
+<button bindtap='search'>查询集合记录并显示组件上</button>
+<view wx:for="{{list}}" wx:key="index">
+  <text>{{item.name}}</text>:<text bindtap='delItem' data-id="{{item._id}}">del</text>
+</view>
+-->
+<!--  
+1.为del绑定tap事件和处理函数
+2.当前记录id传函数里
+3.依据id删除记录
+  data-id 自定义属性
+-->
+<!--  
+<view>云函数</view>
+<button bindtap='handleSuma'>云函数调用</button>
+<button bindtap='handleLogin'>获取登录用户</button>
+<button bindtap='handleDel'>删除多条记录</button>
+
+<view>云存储</view>
+<button bindtap='upload'>上传文件</button>
+<button bindtap='getImage'>展示图片</button>
+
+<view>云存储练习</view>
+<view bindtap='myupload'>上传文件并且保存myphoto集合中</view>
+<view bindtap='myImage'>展示图片</view>
+<block wx:for="{{rows}}" wx:key="index">
+  <image src="{{item.fileID}}"></image><text bindtap='delImg' data-id="{{item.fileID}}">del</text>
+</block>
+-->

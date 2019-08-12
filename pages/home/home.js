@@ -4,11 +4,6 @@ Page({
     //3:保存数据
     list: []
   },
-  jumpArea:function(e){
-     wx.navigateTo({
-       url: '/pages/area/area',
-     })
-  },
   jumpComment: function (e) {
     //功能:用户点击详情按钮后跳转详情组件
     //保留并且跳转,特点允许回退

@@ -1,13 +1,6 @@
 <!-- 首页头部 -->
 <view class='home-header'>
-  <!-- 地址 -->
-  <view class='head-adr'>
-    <van-icon name="location"/>
-    <view bindtap='jumpArea'>郑州</view>  
-  </view>
-  <view class='head-font'>
     热播列表
-  </view>
 </view>
 
 <!--影院首页-->
@@ -30,4 +23,3 @@
     <button class="movie-comment" bindtap='jumpComment' data-id="{{item.id}}">详情</button>
   </view>
 </view>
-
